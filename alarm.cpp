@@ -1,7 +1,26 @@
 #include<iostream>
 using namespace std;
 
+void leaveBedFunction()
+{
+    cout<<"\nLeave the bed.\n";
+    cout<<"\nTurns off the alarm.\n";
+}
 
+void lateFunction()
+{
+    cout<<"\nWill you be late if you sleep for a long time?(yes/no)\n";
+    string late;
+    cin>>late;
+    if(late=="yes")
+    {
+        leaveBedFunction();
+    }
+    else
+    {
+        snoozeFunction();
+    }
+}
 
 void readyFunction()
 {
