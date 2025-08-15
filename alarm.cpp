@@ -1,9 +1,17 @@
 #include<iostream>
 using namespace std;
 
+void alarmFunction();
+void snoozeFunction()
+{
+    cout<<"\nSnooze the alarm for 5 mins...\n";
+    cout<<".\n..\n...\n....\n.....\n5 mins completed";
+    alarmFunction();
+}
+
 void leaveBedFunction()
 {
-    cout<<"\nLeave the bed.\n";
+    cout<<"\nLeaves the bed.\n";
     cout<<"\nTurns off the alarm.\n";
 }
 
